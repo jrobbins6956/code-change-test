@@ -1,4 +1,4 @@
-# Github code change challenge.
+# Github : code change challenge.
 ##Step 1: Do you have a GitHub account?
 
 Make sure that you have signed up for [GitHub here](https://github.com/). You should use you school email account and your username should match. eg (email: jsmith1234@sohamcollege.org.uk username: jsmith1234)
