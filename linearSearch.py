@@ -1,18 +1,20 @@
-testString = ""
-searchChar = ""
-charList = []
-lastPosition = -1
+teststring = ""
+searchchar = ""
+charlist = []
+lastposition = -1
+
+while teststring == "":
+    teststring = input("please enter some text to search :")
+
+while len(searchchar)!=1:
+    searchchar = input("enter a character to search for :")
+    chosenchar = input("what would you like to change the character to")
+
+for x in range (len(teststring)):
+    if teststring[x] == searchchar:
+        teststring = teststring[:x] + chosenchar + teststring[x+1:]
+
+print()
+print(teststring)
 
 
-while testString == "":
-    testString = input("Please enter some text to search : ")
-
-while len(searchChar) != 1:
-    searchChar = input("Enter a character to search for :")
-
-for x in range (len(testString)):
-    if testString[x] == searchChar:
-        charList.append(x-lastPosition)
-        lastPosition = x
-
-print ("I found {0} occurences of {1}".format(len(charList),searchChar))
